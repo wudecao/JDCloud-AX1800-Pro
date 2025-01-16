@@ -1,4 +1,4 @@
-name: X86-64
+name: immortalwrt-x86-64
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: X86-64
+  FIRMWARE_TAG: immortalwrt-x86-64
   TZ: Asia/Shanghai
 
 jobs:
