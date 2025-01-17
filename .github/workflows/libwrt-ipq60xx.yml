@@ -1,4 +1,4 @@
-name: libwrt-ipq60xx-6.12
+name: libwrt-ipq60xx
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: libwrt-ipq60xx-6.12
+  FIRMWARE_TAG: libwrt-ipq60xx
   TZ: Asia/Shanghai
 
 jobs:
@@ -161,8 +161,7 @@ jobs:
         artifacts: ${{ env.FIRMWARE_PATH }}/*
         body: |
           **This is OpenWrt Firmware for ${{ env.FIRMWARE_TAG }}**
-          ### 📒 固件信息(WIFI)
-          - 带WIFI带有线NSS的6.12内核固件
+          ### 📒 libwrt-ipq60xx
           - 💻 这是 ${{ env.FIRMWARE_TAG }} 平台使用的 OpenWrt 固件
           - ⚽ 固件源码: ${{ env.REPO_URL }}
           - 💝 源码分支: ${{ env.REPO_BRANCH }}
