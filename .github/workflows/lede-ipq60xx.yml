@@ -94,6 +94,7 @@ jobs:
     - name: Install Feeds(安装feeds)
       run: |
         cd $OPENWRT_PATH
+        sed -i '1i src-git nss_packages https://github.com/LiBwrt/nss-packages.git' feeds.conf.default
         ./scripts/feeds update -a
         git clone --depth 1 https://github.com/swireb/openwrt-packages.git package/new
         ./scripts/feeds install -a
