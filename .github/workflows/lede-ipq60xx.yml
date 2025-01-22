@@ -98,7 +98,7 @@ jobs:
         git clone --depth 1 https://github.com/swireb/openwrt-packages.git package/swireb
         git clone --depth=1 https://github.com/sbwml/luci-app-alist.git package/alist
         git clone --depth=1 https://github.com/immortalwrt/homeproxy.git package/homeproxy
-        git clone --depth=1 https://github.com/LiBwrt/nss-packages.git package/nss
+        # git clone --depth=1 https://github.com/LiBwrt/nss-packages.git package/nss
         ./scripts/feeds install -a
   
     - name: Load Custom Configuration(加载自定义配置)
